@@ -18,3 +18,8 @@ def list_of_ints(l) -> list:
     # 3. mapping the string integers to a list of integers
     lst_of_ints = list(map(int,(str(l).replace("/n"," ").strip()).split()))
     return lst_of_ints
+
+# converts a 'vertically listed string' to a list of strings splitted on returns
+def list_of_strings(l) -> list:
+    lst_of_strings = str(l).split('\n')
+    return lst_of_strings
